@@ -6,6 +6,9 @@
 🗠 Data tells the truth<br>
 🕵️ "Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say."
 
+I accept donations using the method below:<br>
+XMR (monero): `89DntRp9S5qAvNhUqY1rWwXy3jWHKDGKLgexsGu9mRrYZ7MvA6pkBEGbfji8TFPMUsfUNaz89TmiyUZZua5S6qszUFNnFHq`
+
 Some of my big projects:
 | Type | Name | Description | Link | Status | Tools  |
 | :---: | :---: | :---: | :--- | :---: | :---: |
