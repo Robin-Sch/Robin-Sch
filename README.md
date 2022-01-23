@@ -1,4 +1,3 @@
-test
 👋 Hello I'm Robin<br>
 🐧 Daily driving GNU/linux<br>
 🔐 Believing in the future of encryption<br>
@@ -25,7 +24,8 @@ Some of my small projects:
 | discord bot template | discord-template | A template for your Discord bot | [Robin-Sch/discord-template](https://github.com/Robin-Sch/discord-template) | finished | nodejs, discord.js | 
 | login website | bcrypt-express-login | A simple login webserver using bcrypt | [Robin-Sch/bcrypt-express-login](https://github.com/Robin-Sch/bcrypt-express-login) | finished | nodejs, html |
 
-I have some other projects which aren't listed on here, but you can check them out on my github repositories tab.
+I have some other projects which aren't listed on here, but you can check them out on my github repositories tab.<br>
+I also have my own [gitea server](https://gitea.robinsch.net/) and you can find all my small projects which aren't worth putting on github there.
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=robin-sch&hide=stars&count_private=true&show_icons=true&theme=highcontrast)
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=robin-sch&hide=shell,batchfile&layout=compact&theme=highcontrast)
