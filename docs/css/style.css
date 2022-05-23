@@ -1,0 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../img/backgroundv2.0.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: white;
+}
+
+/* show the collapse when navbar toggle is checked */
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+
+/* the checkbox used only internally; don't display it */
+#navbar-toggle-cbox {
+  display:none
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+#hidden {
+    display: none;
+}
+:checked + #hidden {
+    display: block;
+}
+
+.anchor {
+    color: #C1292E;
+    text-decoration: underline;
+}
+.anchor:hover {
+    color: #972024;
+}
+
+.btn-primary {
+    --bs-btn-bg: #B9272C;
+    --bs-btn-border-color: #B9272C;
+    --bs-btn-hover-bg: #972024;
+    --bs-btn-hover-border-color: #972024;
+}
+
+.mark {
+    color: #317DC4;
+    background-color: transparent;
+}
+
+/*
+    Color pallete
+    primary: #B9272C
+    primary accent: #972024
+    mark: #317DC4
+    other: #F1D302
+    https://coolors.co/b9272c-972024-317dc4-f1d302
+*/

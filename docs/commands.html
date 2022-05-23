@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robin's site</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="img/avatar.webp" width="30" height="30" alt="robinsch.net">
+			</a>
+			<input type="checkbox" id="navbar-toggle-cbox">
+			<label for="navbar-toggle-cbox" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="navbar-toggler-icon"></span>
+			</label>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donate">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="text-center">
+		<h1>Here is a list of commands I use frequently</h1>
+		<a href="#check-listening-ports">Check if a port is available<a><br>
+		<a href="#find-file-by-content">Find a file by content<a><br>
+		<a href="#find-file-by-name">Find a file by name<a><br>
+		<a href="#swap">Install and enable a swap file<a><br>
+		<a href="#save-git-login">Save git login<a><br>
+		<a href="#fix-filesystem">Fix filesystem permissions<a><br>
+		<a href="#reflector">Update Arch Linux mirrors<a><br>
+		<a href="#docker">Install docker + docker-compose<a><br>
+		<a href="#docker-blacklist-ip">Blacklist a specific IP from accessing docker<a><br>
+		<a href="#self-signed-cert">Create and install a self signed SSL certificate<a><br>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="check-listening-ports">
+		<div class="card-body">
+			<h5 class="card-title">Check if a port is available</h5>
+			<p class="card-text">
+				<pre><code>sudo ss -tunlp | grep :port</code></pre>
+				<small>replace <code>port</code> with a number</small>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="find-file-by-content">
+		<div class="card-body">
+			<h5 class="card-title">Find a file by content</h5>
+			<p class="card-text">
+				<pre><code>grep -rnw "." -e "content"</code></pre>
+				<small>replace <code>content</code> with the content you want to search for</small>
+			</p>
+		</div>
+	</div>
+
+
+	<div class="card text-center bg-transparent my-5" id="find-file-by-name">
+		<div class="card-body">
+			<h5 class="card-title">Find a file by name</h5>
+			<p class="card-text">
+				<pre><code>find . -name "name"</code></pre>
+				<small>replace <code>name</code> with the file name you want to search for</small>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="swap">
+		<div class="card-body">
+			<h5 class="card-title">Install and enable a swap file</h5>
+			<p class="card-text">
+				<pre><code>
+sudo fallocate -l 5G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo sh -c "echo '/swapfile none swap sw 0 0' >> /etc/fstab"
+				</code></pre>
+				<small>replace <code>5G</code> with the amount of swap you want to make</small>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="save-git-login">
+		<div class="card-body">
+			<h5 class="card-title">Save git login</h5>
+			<p class="card-text">
+				<pre><code>git config --global credential.helper store</code></pre>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="fix-filesystem">
+		<div class="card-body">
+			<h5 class="card-title">Fix filesystem permissions</h5>
+			<p class="card-text">
+				<pre><code>
+find . -type d -exec chmod 755 {} \;
+find . -type f -exec chmod 644 {} \;
+				</code></pre>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="reflector">
+		<div class="card-body">
+			<h5 class="card-title">Update Arch Linux mirrors</h5>
+			<p class="card-text">
+				<pre><code>sudo reflector --save /etc/pacman.d/mirrorlist --protocol https --latest 5 --sort age</code></pre>
+				<small>If you want to automatically run it on boot</small>
+				<pre><code>
+sudo systemctl enable reflector.service
+sudo systemctl start reflector.service
+				</code></pre>
+				<small>(edit /etc/xdg/reflector/reflector.conf with the options)</small>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="docker">
+		<div class="card-body">
+			<h5 class="card-title">Install docker + docker-compose</h5>
+			<p class="card-text">
+				<pre><code>
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker $USER
+sudo apt-get install python3-pip -y
+sudo pip install docker-compose
+				</code></pre>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="docker-blacklist-ip">
+		<div class="card-body">
+			<h5 class="card-title">Blacklist a specific IP from accessing docker</h5>
+			<p class="card-text">
+				<pre><code>sudo iptables -I DOCKER-USER 1 --src x.x.x.x -j DROP</code></pre>
+				<small>replace <code>x.x.x.x</code> with the IP to block</small>
+			</p>
+		</div>
+	</div>
+
+	<div class="card text-center bg-transparent my-5" id="self-signed-cert">
+		<div class="card-body">
+			<h5 class="card-title">Create and install a self signed SSL certificate</h5>
+			<p class="card-text">
+				<!-- TODO: script? -->
+				<pre><code>
+sudo openssl genpkey -algorithm RSA -aes128 -out private-ca.key -outform PEM -pkeyopt rsa_keygen_bits:2048
+sudo openssl req -x509 -new -nodes -sha256 -days 3650 -key private-ca.key -out self-signed-ca-cert.crt
+sudo openssl genpkey -algorithm RSA -out localhost.key -outform PEM -pkeyopt rsa_keygen_bits:2048
+sudo openssl req -new -key localhost.key -out localhost.csr
+				</code></pre>
+				<small>Then edit <code>domains.ext</code> and paste the contents below</small>
+				<pre><code>
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = somedomain.lan
+DNS.2 = someotherdomain.lan
+IP.1 = 127.0.0.1
+IP.2 = 192.168.1.1
+				</code></pre>
+				<small>Change <code>somedomain.lan</code>, <code>someotherdomain.lan</code>, <code>127.0.0.1</code> and <code>192.168.1.1</code> to what you need</small>
+				<pre><code>
+sudo openssl x509 -req -in localhost.csr -CA self-signed-ca-cert.crt -CAkey private-ca.key -CAcreateserial -out localhost.crt -days 365 -sha256 -extfile domains.ext
+				</code></pre>
+				<small>If you want to change the domains and/or IP's, change the domains.ext file and run the one command above again (you don't have to reinstall the certificate on devices)</small>
+			</p>
+			<p class="card-text">
+				Installation on debian (or debian-based distro):
+				<pre><code>
+sudo mkdir /usr/local/share/ca-certificates/extra
+sudo cp /path/to/self-signed-ca-cert.crt /usr/local/share/ca-certificates/extra/self-signed-ca-cert.crt
+sudo update-ca-certificates
+				</code></pre>
+				<small>Change <code>/path/to/self-signed-ca-cert.crt</code> to the correct path</small>
+			</p>
+			<p class="card-text">
+				Installation in a webbrowser:
+				<p>settings => manage certificates => authorities => import self-signed-ca-cert.crt</p>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>

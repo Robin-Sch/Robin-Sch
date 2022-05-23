@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robin's site</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/typing.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="img/avatar.webp" width="30" height="30" alt="robinsch.net">
+			</a>
+			<input type="checkbox" id="navbar-toggle-cbox">
+			<label for="navbar-toggle-cbox" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="navbar-toggler-icon"></span>
+			</label>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donate">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="d-flex flex-column w-100 min-vh-100 justify-content-center align-items-center">
+		<img src="img/avatar.webp" class="rounded-circle" style="height: 33vh;">
+		<div class="d-flex justify-content-center jsenabled">
+			<h1><span id="typing-name"></span><span id="typing-job"></span></h1>
+			<span class="input-cursor"></span>
+		</div>
+		<noscript>
+			<div  class="text-center">
+				<h1>I'm Robin</h1>
+				<p><small>Javascript is disabled</small></p>
+			</div>
+		</noscript>
+	</div>
+
+	<div class="container">
+		<div class="text-center my-5">
+			<h1>Skills</h1>
+		</div>
+		<div class="row justify-content-center align-items-center my-5">
+			<div class="col-md-4 col-lg-2">
+				<img src="img/javascript.webp" class="card-img">
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
+				<h3>JavaScript</h3>
+				<p>I've been learning JavaScript since 2018. It started when I saw a Discord bot my friend made and I wanted to make one too. After a year or so I started creating websites (and using JavaScript for them). JavaScript is the language I use frequently and feel the most comfortable with. I've done many projects using JavaScript already. You can find some example projects below.</p>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/rstorage-panel/" target="_blank">RStorage</a>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin/" target="_blank">Chattin</a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<img src="img/html.webp" class="card-img">
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+				<h3>HTML</h3>
+				<p>In 2019 I learned how to use HTML and basic CSS. Since then I've created a few sites using HTML. I prefer using EJS (embedded javascript) over HTML, because with EJS you can easily use variables within the website, however, you need to use a backend like express to use EJS.</p>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Robin-Sch/" target="_blank">This site</a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5">
+			<div class="col-md-4 col-lg-2">
+				<img src="img/python.webp" class="card-img">
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-3">
+				<h3>Python</h3>
+				<p>I started with Python in 2019, and in the years following I've used Python only for a few projects. These days I barely use it anymore, because I prefer JavaScript.</p>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<img src="img/linux.webp" class="card-img">
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+				<h3>GNU/Linux</h3>
+				<p>I use (Arch) Linux as my operating system on all my PCs. It all started in 2020 when I was talking with a good friend of mine (the one who also recommended me learning JavaScript) about cleaning up Windows and removing a lot of programs because my disk was full. He recommended Arch Linux to me and with a lot of help I switched. Since then I've been using Arch Linux as my daily driver. I used to dual boot (mainly to play games), however, I don't dual boot anymore.</p>
+				<p>Fun fact: I have a USB stick with (portable) Arch Linux installed on it, so I can boot anywhere on the USB and have everything with me.</p>
+				<a class="btn btn-primary" href="commands">A list of commands I use frequently</a>
+			</div>
+		</div>
+	</div>
+
+	<noscript><style>.jsenabled{display:none!important}</style></noscript>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robin's site</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="img/avatar.webp" width="30" height="30" alt="robinsch.net">
+			</a>
+			<input type="checkbox" id="navbar-toggle-cbox">
+			<label for="navbar-toggle-cbox" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="navbar-toggler-icon"></span>
+			</label>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donate">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="text-center my-5">
+			<h1>A few of my projects</h1>
+			<p>You can find more projects on <a class="anchor" href="https://github.com/Robin-Sch">my github profile</a></p>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="rstorage">
+			<div class="col-md-4 col-lg-2">
+				<img src="img/rstorage.webp" class="img-fluid">
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
+				<h3 style="display:inline-block;">
+					RStorage
+					<img src="img/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
+					<img src="img/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
+				</h3>
+				<p class="float-end align-self-center">
+					<span class="badge text-bg-primary p-2 m-1">2021</span>
+					<span class="badge text-bg-success p-2 m-1">active</span>
+				</p>
+				<p><small>RStorage is an encrypted cloud file storage.</small></p>
+				<p>The idea of RStorage is that you have <strong>one</strong> panel, which is like the "master". This is meant to be installed on a PC, but it can be installed on a server too (but that's not recommended). You also have (multiple) nodes, which is where the encrypted files will be stored. The files will be split up into parts and all parts will be spread over all nodes. The encryption key is stored with the panel and there is no way for the nodes to decrypt the parts. It uses "military grade" AES-256 encryption.</p>
+				<p>If you upload a file, the file is sent using a stream to the panel. After that the panel cuts the stream into chunks, and sends each chunk to a worker (for multi-threading). After that the worker encrypts the chunk (using AES-256) with the key belonging to a specific node (each node has it's own unique key, which is only known to the panel) and sends the encrypted stream to the node (encrypted over TLS), which then stores it on it's disk.
+				   <br>For downloading it's the same process, but then reversed.
+				   <br>Everything is done using streams, because else you need A LOT of memory to store each file in plaintext and encrypted (or add unnecesary disk read/writes).</p>
+				<p>This project is more meant for myself and to learn from rather than to be actually used. There are many better alternatives like for example cryptomator and rclone to use encryption with cloud storage.</p>
+				<p>I learned a lot about encryption with this project. I wouldn't call myself an expert now, nor do I deeply know how it works. I know the basics and that's good enough for me. I plan on taking a deep dive into encryption when I'm older, but it's not one of my priorities right now. Besides that I also learned about using workers (multi threading) with Node.js and automated testing of Electron apps.</p>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/rstorage-panel/" target="_blank">Github</a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="pokehunt">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<img src="img/pokehunt.webp" class="img-fluid">
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+				<h3 style="display:inline-block;">
+					PokéHunt
+					<img src="img/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
+					<img src="img/postgresql.webp" width="30" style="border-radius:0.375rem" title="PostgreSQL">
+					<img src="img/redis.webp" width="30" style="border-radius:0.375rem" title="Redis">
+				</h3>
+				<p class="float-end">
+					<span class="badge text-bg-primary p-2 m-1">2020</span>
+					<span class="badge text-bg-success p-2 m-1">active</span>
+				</p>
+				<p><small>PokéHunt is a Pokémon Bot (Like Pokecord) That Let's It's Players to Catch, Collect, Trade & Battle While Completing Various Quests!</small></p>
+				<p>It all started when the biggest Pokémon bot on Discord (Pokecord) decided to shut down. After that many small Pokémon bots appeared, including PokéHunt (before: Pokecord 2.0). A few of my friends started it and later I joined. I already had made a basic Pokémon bot before and we could re-use most of the code and data.</p>
+				<p>You can choose your own starter Pokémon from each generation, from Generation Kanto all the way to Generation Galar. When typing/chatting in chat, random Pokémon will spawn and you can catch it. You need to know/guess the name, but if you don't know you can always use the hint command. Besides that, every 10 minutes you can hunt a Pokémon. This will basically give you a random Pokémon! If you want a specific Pokémon, you can search on the market and buy Pokémon from others. This way you can get unique and rare Pokémon! And if you do have a rare Pokémon, you can put it on the market for other people to buy it. You can also put it in an auction, this way other players can bid for your Pokémon. Besides that, you can always directly trade Pokémon, redeems and credits with another player.</p>
+				<p>There are also a few quests you should complete with various rewards like redeems and credits (in-game currency). And as a server owner, you have many settings you can change like the bot's prefix, which channel Pokémon should (not) spawn in and redirect all spawns into a specific channel.</p>
+				<p>With the bot I learned and experienced coding in a team and in a big project (with a lot of users). And with the bot I made previously I learned a lot about using objects and arrays in JavaScript.</p>
+				<a class="btn btn-primary" href="https://pokehunt.xyz/" target="_blank">Website</a>
+				<a class="btn btn-primary" href="https://pokehunt.xyz/invite" target="_blank">Invite</a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="chattin">
+			<div class="col-md-4 col-lg-2">
+				<img src="img/chattin.webp" class="img-fluid">
+			</div>
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
+				<h3 style="display:inline-block;">
+					Chattin
+					<img src="img/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
+					<img src="img/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
+				</h3>
+				<p class="float-end">
+					<span class="badge text-bg-primary p-2 m-1">2020</span>
+					<span class="badge text-bg-success p-2 m-1">active</span>
+				</p>
+				<p><small>Chattin is a simple app which allows you to chat to other people in different rooms. If you join the same room as your friends, you are able to talk to them in that specific room.</small></p>
+				<p>Chattin is an app where you can talk to others with end-to-end encryption. In order to talk with someone (or multiple people), you both need to join the same group. Messages aren't stored anywhere so if you close the app all messages will be lost!</p>
+				<p>This project is more meant for myself and to learn from rather than to be actually used. There are many (better) chat apps, like for example matrix.</p>
+				<p>With Chattin I learned a lot about using Electron to make desktop apps. I also learned a lot about websockets (socket.io).</p>
+				<a class="btn btn-primary" href="https://github.com/RobinSchapendonk/Chattin" target="_blank">Github</a>
+				<a class="btn btn-primary" href="https://github.com/RobinSchapendonk/Chattin/releases" target="_blank">Download</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
