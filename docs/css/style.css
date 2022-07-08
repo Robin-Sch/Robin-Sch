@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-position: left center;
     color: white;
+    min-height: 100vh;
 }
 
 /* show the collapse when navbar toggle is checked */

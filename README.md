@@ -9,7 +9,7 @@
 You can view my website [here](https://www.robinsch.net/)
 
 I accept donations using the method below:<br>
-XMR (monero): `89DntRp9S5qAvNhUqY1rWwXy3jWHKDGKLgexsGu9mRrYZ7MvA6pkBEGbfji8TFPMUsfUNaz89TmiyUZZua5S6qszUFNnFHq`<br>
+XMR (monero): `8BWkruwTUjv75yfrXguw9xTWHiVEtv86cWtxtKrpH4CCHjxPFZwnA9UM4xuAvuFYtEih5CPPPnSo79ZdFALojf6Y9t192Jx`<br>
 BTC (bitcoin): `bc1qcnkc7z4hhskyae84yevspj4chy7szgvmg0jtk3`<br>
 For other options: [contact me](https://www.robinsch.net/contact)
 
