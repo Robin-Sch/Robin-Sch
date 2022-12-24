@@ -99,6 +99,29 @@
 
 		<div class="row justify-content-center align-items-center my-5" id="chattin">
 			<div class="col-md-4 col-lg-2">
+				<img src="img/arduino-animatronic-eyes.webp" class="img-fluid">
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+				<h3 style="display:inline-block;">
+					Arduino animatronic eyes
+					<img src="img/arduino.svg" width="30" style="border-radius:0.375rem" title="Arduino">
+				</h3>
+				<p class="float-end">
+					<span class="badge text-bg-primary p-2 m-1">2022</span>
+					<span class="badge text-bg-success p-2 m-1">active</span>
+				</p>
+				<p><small>A computer science project I've build with a friend of mine.</small></p>
+				<p>For computer science we (a friend of mine and me) had to create a project using an Arduino UNO. At first glance we thought creating animatronic eyes would be too difficult, but after some research it seemed doable.</p>
+				<p>The concept of this project is that when you walk past, the eyes should follow you. We've achieved that using the ADNS 3080 sensor, which is an optical flow sensor. The ADNS 3080 measures where there is movement, and outputs x and y coördinates. After that the Arduino calculates how much the servo's should move and sends the signal to move them.</p>
+				<p>The only downside/problem with this sensor is that when you wear dark clothes, the sensor doesn't tracks you as well as when you wear light clothes. We've tried to fix this problem by adding IR leds, however, that still didn't fix it. Other than that, it works perfectly, despite "only" having 30x30 pixels. </p>
+				<p>We decided to put the eyes in a box behind a picture of Mark Zuckerberg, to make a privacy statement. This way it looks like he's always watching you (as his eyes will follow you when you walk past him).</p>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/arduino-animatronic-eyes" target="_blank">Github</a>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="chattin">
+			<div class="col-md-4 col-lg-2 order-md-2">
 				<img src="img/chattin.webp" class="img-fluid">
 			</div>
 			<div class="col-1"></div>
@@ -116,8 +139,8 @@
 				<p>Chattin is an app where you can talk to others with end-to-end encryption. In order to talk with someone (or multiple people), you both need to join the same group. Messages aren't stored anywhere so if you close the app all messages will be lost!</p>
 				<p>This project is more meant for myself and to learn from rather than to be actually used. There are many (better) chat apps, like for example matrix.</p>
 				<p>With Chattin I learned a lot about using Electron to make desktop apps. I also learned a lot about websockets (socket.io).</p>
-				<a class="btn btn-primary" href="https://github.com/RobinSchapendonk/Chattin" target="_blank">Github</a>
-				<a class="btn btn-primary" href="https://github.com/RobinSchapendonk/Chattin/releases" target="_blank">Download</a>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin" target="_blank">Github</a>
+				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin/releases" target="_blank">Download</a>
 			</div>
 		</div>
 	</div>
