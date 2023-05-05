@@ -2,9 +2,10 @@
 🐧 Linux enthusiast<br>
 👐 Open source lover<br>
 
-You can view my website [here](https://www.robinsch.net/).
-You can contact me by email, [robin@robinsch.net](mailto:robin@robinsch.net)
-I'm also available on [matrix](https://matrix.org/), @robinsch:matrix.org
+You can view my website [here](https://www.robinsch.net/).<br>
+You can contact me by my email, [robin@robinsch.net](mailto:robin@robinsch.net).
+
+
 
 Some of my big projects:
 | Type | Name | Description | Link | Status | Tools  |
