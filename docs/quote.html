@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        video {
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 95%;
+            width: auto; height: auto; z-index: -100;
+        }  
+        button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 64px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #008CBA;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+        }
+    </style>
+    <script>
+            function start() {
+                document.getElementById("button").style.display = "none";
+                const video = document.getElementById("video");
+                video.style.display = "block";
+                video.play();
+            }
+    </script>
+</head>
+
+<body>
+    <video id="video" style="display: none" loop>
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <button id="button" onclick="start()">View</button>
+</body>
+
+</html>
