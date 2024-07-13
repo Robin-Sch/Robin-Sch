@@ -9,10 +9,10 @@ Some of my big(ger) projects (see [www.robinsch.net](ttps://www.robinsch.net/pro
 | Type | Name | Description | Link | Status | Tools  |
 | :---: | :---: | :---: | :--- | :---: | :---: |
 | game | CloudRush | CloudRush is a two-dimensional, arcade style game which I made with a friend of mine. | [Github](https://github.com/Robin-Sch/CloudRush) | finished | Java |
-| discord bot | PokéHunt | PokeHunt is a Pokémon Bot (Like Pokecord) That Let's It's Players to Catch, Collect, Trade & Battle While Completing Various Quests! | [pokehunt.xyz](https://www.pokehunt.xyz/) | active | TypeScript, discord.js |
+| discord bot | PokéHunt | PokeHunt is a Pokémon Bot (Like Pokecord) That Let's It's Players to Catch, Collect, Trade & Battle While Completing Various Quests! | [www.pokehunt.xyz](https://www.pokehunt.xyz/) | active | TypeScript, discord.js |
 | arduino project | Animatronic Eyes | A computer science project I've build with a friend of mine | [Github](https://github.com/Robin-Sch/arduino-animatronic-eyes) | finished | Arduino (UNO) |
 | selfhosted storage | RStorage | RStorage is a selfhosted encrypted file storage | [Github](https://github.com/Robin-Sch/rstorage-panel) | not in active development | nodejs, html |
-| chat app | Chattin | Chattin is a simple app which allows you to chat to other people in different rooms. If you join the same room as your friends, you are able to talk to them in that specific room. | [Robin-Sch/Chattin](https://github.com/Robin-Sch/Chattin) | discontinued | nodejs, html, websockets, electron |
+| chat app | Chattin | Chattin is a simple app which allows you to chat to other people in different rooms. If you join the same room as your friends, you are able to talk to them in that specific room. | [Github](https://github.com/Robin-Sch/Chattin) | discontinued | nodejs, html, websockets, electron |
 
 Some of my small projects:
 | Type | Name | Description | Link | Status | Tools |

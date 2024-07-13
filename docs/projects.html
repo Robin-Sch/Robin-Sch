@@ -7,6 +7,7 @@
 	<title>Robin's site</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -25,14 +26,17 @@
 						<a class="nav-link" href="./">Home</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="skills">Skills</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="projects">Projects</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact">Contact</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="donate">Donate</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -40,127 +44,233 @@
 
 	<div class="container">
 		<div class="text-center my-5">
-			<h1>A few of my projects</h1>
+			<h1>Projects</h1>
 			<p>You can find more projects on <a class="anchor" href="https://github.com/Robin-Sch">my github profile</a></p>
 		</div>
 
-		<div class="row justify-content-center align-items-center my-5" id="cloudrush">
+		<div class="row justify-content-center align-items-center my-5" id="pokehunt">
 			<div class="col-md-4 col-lg-2">
-				<img src="img/cloudrush.webp" class="img-fluid">
+				<img src="img/projects/pokehunt.webp" class="img-fluid">
 			</div>
 			<div class="col-1"></div>
 			<div class="col-md-7 col-lg-9 bg-dark p-4">
 				<h3 style="display:inline-block;">
+					PokéHunt
+					<img src="img/badges/typescript.webp" width="30" style="border-radius:0.375rem" title="TypeScript">
+					<img src="img/badges/postgresql.webp" width="30" style="border-radius:0.375rem" title="PostgreSQL">
+					<img src="img/badges/redis.webp" width="30" style="border-radius:0.375rem" title="Redis">
+				</h3>
+				<p class="float-end">
+					<span class="badge text-bg-primary p-2 m-1">2020-24</span>
+					<span class="badge text-bg-success p-2 m-1">active</span>
+				</p>
+				<p><small>A Pokémon app in Discord</small></p>
+				<p>PokéHunt is a Pokémon app to catch, collect, trade and battle Pokémon inside of Discord. As of mid 2024, the app has 85k users and 5.5 million Pokémon whilst being used in 9.5k guilds (groups).</p>
+				<p>I learned coding in a team and working with a big project. Since this was one of my first projects, it also gave me experience with coding in general.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#pokehunt-more" role="button" aria-expanded="false" aria-controls="pokehunt-more">More info</a>
+				<a class="btn btn-primary" href="https://pokehunt.xyz/" target="_blank">Website</a>
+				<a class="btn btn-primary" href="https://pokehunt.xyz/invite" target="_blank">Invite</a>
+				<div class="collapse" id="pokehunt-more">
+					<div class="card card-body bg-dark">
+						<p>This project started when the biggest Pokémon app on Discord (Pokécord) decided to shut down.
+							After the announcement many small Pokémon apps quickly appeared, including PokéHunt (before: Pokecord 2.0).
+							I already had made a basic Pokémon app before, and together with some of my friends we turned it into a complete functional Discord app.</p>
+
+						<p>You can choose your own starter Pokémon from each generation, from Generation Kanto all the way to Generation Galar.
+							When typing/chatting in chat, random Pokémon (based on their rarity) will spawn and you can catch them.
+							However, you need to know/guess the name to catch it (there's a hint command if you need a small hint).
+							Every 10 minutes you can also hunt for a random Pokémon from the wild.</p>
+
+						<p>To get a specific Pokémon, you can search on the market and buy Pokémon from others. This way you can get unique and rare Pokémon!
+							And if you do have a rare Pokémon, you can put it on the market for other people to buy it.
+							You can also put it in an auction, this way other players can bid for your Pokémon.
+							Additionally, you can always directly trade Pokémon and currency with other players.</p>
+
+						<p>There are also a few quests you should complete with various rewards like redeems and credits (in-game currency).
+							As a guild (group) owner, you have many settings you can change like in which channel Pokémon should (not) spawn and redirect all spawns into a specific channel.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="airport-checkin-robot">
+			<div class="col-md-5 col-lg-3 order-md-2">
+				<div id="airport-checkin-carousel" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/projects/airport-checkin-0.webp" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/projects/airport-checkin-1.webp" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/projects/airport-checkin-2.webp" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/projects/airport-checkin-3.webp" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<!-- <div class="col-1 order-md-1"></div> -->
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
+				<h3 style="display:inline-block;">
+					Airport check-in robot
+					<img src="img/badges/typescript.webp" width="30" style="border-radius:0.375rem" title="TypeScript">
+					<img src="img/badges/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
+					<img src="img/badges/raspberry.svg" width="30" style="border-radius:0.375rem" title="Raspberry">
+					<img src="img/badges/arduino.svg" width="30" style="border-radius:0.375rem" title="Arduino">
+				</h3>
+				<p class="float-end align-self-center">
+					<span class="badge text-bg-primary p-2 m-1">2024</span>
+					<span class="badge text-bg-success p-2 m-1">finished</span>
+				</p>
+				<p><small>A simple sorting robot based on QR codes</small></p>
+				<p>This robot simulates the complete check-in at an airport, and is made by a group of 6 CS students (including me). Due to our robot having 0 issues, having a creative idea and giving a good demo we received full marks for this project.</p>
+				<p>I learned basic electronics and SCRUM for this project. Sadly, the source code is not allowed to be public due to school policy.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#airport-checkin-robot-more" role="button" aria-expanded="false" aria-controls="airport-checkin-robot-more">More info</a>
+				<div class="collapse" id="airport-checkin-robot-more">
+					<div class="card card-body bg-dark">
+						<p>We received an assigment to build a sorting robot based on some part of an airport system. We decided to go for a complete check-in system, including selecting the destination, taking the baggage and sending it to the correct plane. The robot is made of fischertechnik, and is controlled by a Raspberry pi and Arduino UNO.</p>
+						<p>It has a heavy focus on error handling, as this is a very important aspect of airport baggage handling. For this, it uses 5 sensors to make sure no baggage is lost and everything runs as it is supposed to. We tackled more than 15 different failure points, ranging from cable disconnection to hardware failure and belt blockage.</p>
+						<p>It starts by selecting the correct destination on the touchscreen, after which an unique QR code gets printed which you can stick on your baggage. Then, after placing the baggage on the belt it will go into the machine, where a camera scans the QR code and sorts it accordingly to one of the three destinations.</p>
+						<p>It keeps track of the amount of baggage in the plane storage, and there is a button to simulate a plane taking off (thus storage being emptied). There's also a debug panel for manual control of the belt and sorting arm, aswell as a live status list of the sensor outputs and the state of the machine.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center align-items-center my-5" id="cloudrush">
+			<div class="col-md-5 col-lg-3">
+				<img src="img/projects/cloudrush.webp" class="img-fluid">
+			</div>
+			<!-- <div class="col-1"></div> -->
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
+				<h3 style="display:inline-block;">
 					CloudRush
-					<img src="img/java.webp" width="30" style="border-radius:0.375rem" title="Java">
+					<img src="img/badges/java.webp" width="30" style="border-radius:0.375rem" title="Java">
 				</h3>
 				<p class="float-end">
 					<span class="badge text-bg-primary p-2 m-1">2023</span>
 					<span class="badge text-bg-success p-2 m-1">finished</span>
 				</p>
-				<p><small>CloudRush is a two-dimensional, arcade style game which I made with a friend of mine.</small></p>
-				<p>In this game, you are a cloud, which can generate rain and lightnings. You're going through various cities, filled with people, flowers and street lanterns. With the rain you can water the flowers, but also make people get wet. By striking lightning on street lanterns, you can turn them on and/or off, but if you miss, you might hit and electrocute a pedestrian. During the game, there will appear various bonuses/debuffs in the sky, which can be collected to uncover their positive (or negative!) effect.</p>
-				<p>The goal is to collect as many points as possible. You get points for different actions, like watering the flowers and (deducted) points for making people wet. Actions have different weights, so you don't get the same amount of points for a different action. Those weights are also affected by the collected bonuses/debuffs, so make sure to collect those too. After the game ends, you can type in your nickname and admire your score on the leaderboard in the main menu.</p>
+				<p><small>A two-dimensional, arcade style game</small></p>
+				<p>CloudRush is a simple Java game made with a friend of mine. It was an assignment to learn the basics of java development, and we got full marks for it.</p>
+				<p>I learned about Java and game development with this project.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#cloudrush-more" role="button" aria-expanded="false" aria-controls="cloudrush-more">More info</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/CloudRush/" target="_blank">Github</a>
+				<div class="collapse" id="cloudrush-more">
+					<div class="card card-body bg-dark">
+						<p>In this game, you are a cloud, which can generate rain and lightnings. You're going through various cities, filled with people, flowers and street lanterns. With the rain you can water the flowers, but also make people get wet. By striking lightning on street lanterns, you can turn them on and/or off, but if you miss, you might hit and electrocute a pedestrian. During the game, there will appear various bonuses/debuffs in the sky, which can be collected to uncover their positive (or negative!) effect.</p>
+						<p>The goal is to collect as many points as possible. You get points for different actions, like watering the flowers and (deducted) points for making people wet. Actions have different weights, so you don't get the same amount of points for a different action. Those weights are also affected by the collected bonuses/debuffs, so make sure to collect those too. After the game ends, you can type in your nickname and admire your score on the leaderboard in the main menu.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="row justify-content-center align-items-center my-5" id="pokehunt">
+		<div class="row justify-content-center align-items-center my-5" id="animatronic-eyes">
 			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/pokehunt.webp" class="img-fluid">
+				<img src="img/projects/animatronic-eyes.webp" class="img-fluid">
 			</div>
 			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
 				<h3 style="display:inline-block;">
-					PokéHunt
-					<img src="img/typescript.webp" width="30" style="border-radius:0.375rem" title="TypeScript">
-					<img src="img/postgresql.webp" width="30" style="border-radius:0.375rem" title="PostgreSQL">
-					<img src="img/redis.webp" width="30" style="border-radius:0.375rem" title="Redis">
-				</h3>
-				<p class="float-end">
-					<span class="badge text-bg-primary p-2 m-1">2020</span>
-					<span class="badge text-bg-success p-2 m-1">active</span>
-				</p>
-				<p><small>PokéHunt is a Pokémon Bot (Like Pokecord) That Let's It's Players to Catch, Collect, Trade & Battle While Completing Various Quests!</small></p>
-				<p>It all started when the biggest Pokémon bot on Discord (Pokecord) decided to shut down. After that many small Pokémon bots appeared, including PokéHunt (before: Pokecord 2.0). A few of my friends started it and later I joined. I already had made a basic Pokémon bot before and we could re-use most of the code and data.</p>
-				<p>You can choose your own starter Pokémon from each generation, from Generation Kanto all the way to Generation Galar. When typing/chatting in chat, random Pokémon will spawn and you can catch it. You need to know/guess the name, but if you don't know you can always use the hint command. Besides that, every 10 minutes you can hunt a Pokémon. This will basically give you a random Pokémon! If you want a specific Pokémon, you can search on the market and buy Pokémon from others. This way you can get unique and rare Pokémon! And if you do have a rare Pokémon, you can put it on the market for other people to buy it. You can also put it in an auction, this way other players can bid for your Pokémon. Besides that, you can always directly trade Pokémon, redeems and credits with another player.</p>
-				<p>There are also a few quests you should complete with various rewards like redeems and credits (in-game currency). And as a server owner, you have many settings you can change like the bot's prefix, which channel Pokémon should (not) spawn in and redirect all spawns into a specific channel.</p>
-				<p>With the bot I learned and experienced coding in a team and in a big project (with a lot of users). And with the bot I made previously I learned a lot about using objects and arrays in JavaScript.</p>
-				<a class="btn btn-primary" href="https://pokehunt.xyz/" target="_blank">Website</a>
-				<a class="btn btn-primary" href="https://pokehunt.xyz/invite" target="_blank">Invite</a>
-			</div>
-		</div>
-
-		<div class="row justify-content-center align-items-center my-5" id="chattin">
-			<div class="col-md-4 col-lg-2">
-				<img src="img/arduino-animatronic-eyes.webp" class="img-fluid">
-			</div>
-			<div class="col-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-4">
-				<h3 style="display:inline-block;">
-					Arduino animatronic eyes
-					<img src="img/arduino.svg" width="30" style="border-radius:0.375rem" title="Arduino">
+					Animatronic eyes
+					<img src="img/badges/arduino.svg" width="30" style="border-radius:0.375rem" title="Arduino">
 				</h3>
 				<p class="float-end">
 					<span class="badge text-bg-primary p-2 m-1">2022</span>
 					<span class="badge text-bg-success p-2 m-1">finished</span>
 				</p>
-				<p><small>A computer science project I've build with a friend of mine.</small></p>
-				<p>For computer science we (a friend of mine and me) had to create a project using an Arduino UNO. At first glance we thought creating animatronic eyes would be too difficult, but after some research it seemed doable.</p>
-				<p>The concept of this project is that when you walk past, the eyes should follow you. We've achieved that using the ADNS 3080 sensor, which is an optical flow sensor. The ADNS 3080 measures where there is movement, and outputs x and y coördinates. After that the Arduino calculates how much the servo's should move and sends the signal to move them.</p>
-				<p>The only downside/problem with this sensor is that when you wear dark clothes, the sensor doesn't tracks you as well as when you wear light clothes. We've tried to fix this problem by adding IR leds, however, that still didn't fix it. Other than that, it works perfectly, despite "only" having 30x30 pixels. </p>
-				<p>We decided to put the eyes in a box behind a picture of Mark Zuckerberg, to make a privacy statement. This way it looks like he's always watching you (as his eyes will follow you when you walk past him).</p>
+				<p><small>A spooky Arduino project</small></p>
+				<p>This is a simple Arduino UNO project, where the 3d printed eyes will follow you when you walk past.</p>
+				<p>I learned about simple soldering and 3d printing skills while creating this project.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#animatronic-eyes-more" role="button" aria-expanded="false" aria-controls="animatronic-eyes-more">More info</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/arduino-animatronic-eyes" target="_blank">Github</a>
+				<div class="collapse" id="animatronic-eyes-more">
+					<div class="card card-body bg-dark">
+						<p>For computer science we (a friend of mine and me) had to create a project using an Arduino UNO. At first glance we thought creating animatronic eyes would be too difficult, but after some research it seemed doable.</p>
+						<p>The concept of this project is that when you walk past, the eyes should follow you. We've achieved that using the ADNS 3080 sensor, which is an optical flow sensor. The ADNS 3080 measures where there is movement, and outputs x and y coördinates. After that the Arduino calculates how much the servo's should move and sends the signal to move them.</p>
+						<p>The only downside/problem with this sensor is that when you wear dark clothes, the sensor doesn't tracks you as well as when you wear light clothes. We've tried to fix this problem by adding IR leds, however, that still didn't fix it. Other than that, it works perfectly, despite "only" having 30x30 pixels. </p>
+						<p>We decided to put the eyes in a box behind a picture of Mark Zuckerberg, to make a privacy statement. This way it looks like he's always watching you (as his eyes will follow you when you walk past him).</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5" id="rstorage">
-			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/rstorage.webp" class="img-fluid">
+			<div class="col-md-4 col-lg-2">
+				<img src="img/projects/rstorage.webp" class="img-fluid">
 			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
 				<h3 style="display:inline-block;">
 					RStorage
-					<img src="img/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
-					<img src="img/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
+					<img src="img/badges/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
+					<img src="img/badges/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
 				</h3>
 				<p class="float-end align-self-center">
 					<span class="badge text-bg-primary p-2 m-1">2021</span>
 					<span class="badge text-bg-warning p-2 m-1">not in active development</span>
 				</p>
-				<p><small>RStorage is an encrypted cloud file storage.</small></p>
-				<p>The idea of RStorage is that you have <strong>one</strong> panel, which is like the "master". This is meant to be installed on a PC, but it can be installed on a server too (but that's not recommended). You also have (multiple) nodes, which is where the encrypted files will be stored. The files will be split up into parts and all parts will be spread over all nodes. The encryption key is stored with the panel and there is no way for the nodes to decrypt the parts. It uses "military grade" AES-256 encryption.</p>
-				<p>If you upload a file, the file is sent using a stream to the panel. After that the panel cuts the stream into chunks, and sends each chunk to a worker (for multi-threading). After that the worker encrypts the chunk (using AES-256) with the key belonging to a specific node (each node has it's own unique key, which is only known to the panel) and sends the encrypted stream to the node (encrypted over TLS), which then stores it on it's disk.
-				   <br>For downloading it's the same process, but then reversed.
-				   <br>Everything is done using streams, because else you need A LOT of memory to store each file in plaintext and encrypted (or add unnecesary disk read/writes).</p>
-				<p>This project is more meant for myself and to learn from rather than to be actually used. There are many better alternatives like for example cryptomator and rclone to use encryption with cloud storage.</p>
-				<p>I learned a lot about encryption with this project. I wouldn't call myself an expert now, nor do I deeply know how it works. I know the basics and that's good enough for me. I plan on taking a deep dive into encryption later, but it's not one of my priorities right now. Besides that I also learned about using workers (multi threading) with Node.js and automated testing of Electron apps.</p>
+				<p><small>An encrypted cloud file storage.</small></p>
+				<p>RStorage is a way to store your files distributed and encrypted across multiple servers. There is a panel (master), which has multiple storage nodes. You upload a file to the panel, which will cut it into chunks and send it encrypted to the nodes.</p>
+				<p>I learned a lot about encryption, file streaming and multi threading with this project.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#rstorage-more" role="button" aria-expanded="false" aria-controls="rstorage-more">More info</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/rstorage-panel/" target="_blank">Github</a>
+				<div class="collapse" id="rstorage-more">
+					<div class="card card-body bg-dark">
+						<p>The idea of RStorage is that you have <strong>one</strong> panel, which is like the "master". This is meant to be installed on a PC, but it can be installed on a server too (but that's not recommended). You also have (multiple) nodes, which is where the encrypted files will be stored. The files will be split up into parts and all parts will be spread over all nodes. The encryption key is stored with the panel and there is no way for the nodes to decrypt the parts. It uses "military grade" AES-256 encryption.</p>
+						<p>If you upload a file, the file is sent using a stream to the panel. After that the panel cuts the stream into chunks, and sends each chunk to a worker (for multi-threading). After that the worker encrypts the chunk (using AES-256) with the key belonging to a specific node (each node has it's own unique key, which is only known to the panel) and sends the encrypted stream to the node (encrypted over TLS), which then stores it on it's disk.
+						<br>For downloading it's the same process, but then reversed.
+						<br>Everything is done using streams, because else you need A LOT of memory to store each file in plaintext and encrypted (or add unnecesary disk read/writes).</p>
+						<p>This project is more meant for myself and to learn from rather than to be actually used. There are many better alternatives like for example cryptomator and rclone to use encryption with cloud storage.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5" id="chattin">
-			<div class="col-md-4 col-lg-2">
-				<img src="img/chattin.webp" class="img-fluid">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<img src="img/projects/chattin.webp" class="img-fluid">
 			</div>
-			<div class="col-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-4">
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
 				<h3 style="display:inline-block;">
 					Chattin
-					<img src="img/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
-					<img src="img/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
+					<img src="img/badges/javascript.webp" width="30" style="border-radius:0.375rem" title="JavaScript">
+					<img src="img/badges/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
 				</h3>
 				<p class="float-end">
 					<span class="badge text-bg-primary p-2 m-1">2020</span>
 					<span class="badge text-bg-danger p-2 m-1">discontinued</span>
 				</p>
-				<p><small>Chattin is a simple app which allows you to chat to other people in different rooms. If you join the same room as your friends, you are able to talk to them in that specific room.</small></p>
-				<p>Chattin is an app where you can talk to others with end-to-end encryption. In order to talk with someone (or multiple people), you both need to join the same group. Messages aren't stored anywhere so if you close the app all messages will be lost!</p>
-				<p>This project is more meant for myself and to learn from rather than to be actually used. There are many (better) chat apps, like for example matrix.org. Chattin requires a central server to be running, which I shut down, so you can't use it (anymore)</p>
-				<p>With Chattin I learned a lot about using Electron to make desktop apps. I also learned a lot about websockets (socket.io).</p>
+				<p><small>A simple chat app</small></p>
+				<p>Chattin is a simple chat app to securely talk with others. This project is meant as a learning project for myself, and shouldn't be used.</p>
+				<p>I learned a lot about Electron (to make desktop apps) and websockets while making this project.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#chattin-more" role="button" aria-expanded="false" aria-controls="chattin-more">More info</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin" target="_blank">Github</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin/releases" target="_blank">Download</a>
+				<div class="collapse" id="chattin-more">
+					<div class="card card-body bg-dark">
+						<p>Chattin is an app where you can talk to others with "military grade" encryption. In order to talk with someone (or multiple people), you both need to join the same group. Messages aren't stored anywhere so if you close the app all messages will be lost!</p>
+						<p>This project is more meant for myself and to learn from rather than to be actually used. There are many (better) chat apps, like for example matrix.org. Chattin requires a central server to be running, which I shut down, so you can't use it (anymore)</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

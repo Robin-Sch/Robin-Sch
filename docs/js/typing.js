@@ -1,7 +1,6 @@
-/* eslint-disable no-undef */
 const positions = [
-	{ text: 'a Linux enthusiast', color: '#C1292E' },
-	{ text: 'a Node.js dev', color: '#C1292E' },
+	{ text: 'a Linux enjoyer', color: '#C1292E' },
+	{ text: 'a Typescript dev', color: '#C1292E' },
 ];
 
 window.onload = async () => {
