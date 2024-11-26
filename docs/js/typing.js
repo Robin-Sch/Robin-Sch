@@ -1,6 +1,9 @@
 const positions = [
-	{ text: 'a Linux enjoyer', color: '#C1292E' },
-	{ text: 'a Typescript dev', color: '#C1292E' },
+	{ text: 'a System admin', color: '#C1292E' },
+	{ text: 'a Software developer', color: '#C1292E' },
+	{ text: 'interested in cybersecurity', color: '#C1292E' },
+	{ text: 'a daily Linux user', color: '#C1292E' },
+	{ text: 'an open source lover', color: '#C1292E' },
 ];
 
 window.onload = async () => {

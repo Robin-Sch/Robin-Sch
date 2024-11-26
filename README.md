@@ -5,11 +5,11 @@ Hello I'm Robin!
 - Linux enjoyer
 - Open source lover
 
-For my real profile, please take a look at my website, [www.robinsch.net](https://www.robinsch.net/). All the information is on there!
+For my profile, please take a look at my website, [www.robinsch.net](https://www.robinsch.net/). All the information is on there!
 
 You can find my contact details [here](https://www.robinsch.net/contact).
 
-You can find (some of) my projects [here](ttps://www.robinsch.net/projects).
+You can find (some of) my projects [here](https://www.robinsch.net/projects).
 There are some other (small) projects which aren't listed, but you can check them out on my github repositories tab.
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=robin-sch&hide=stars&count_private=true&show_icons=true&theme=highcontrast)
