@@ -45,26 +45,26 @@
 		<div class="row justify-content-center m-5">
 			<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 				<h3>Email</h3>
-				<p><a class="anchor" href="mailto:iyhqo@robinsch.net" id="email">iyhqo@robinsch.net</a></p>
-				<p>(Email is randomly generated to prevent spam)</p>
+				<p id="email">iyhqo [at] robinsch.net</p>
+				<p>Email is random to prevent spam, <a class="anchor" href="gpg.txt">GPG key</a></p>
+
 			</div>
 			<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 				<h3>Signal</h3>
 				<p>@Robin.392</p>
 			</div>
-			<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+			<!-- <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 				<h3>Matrix</h3>
 				<p>@robinsch:matrix.org</p>
 				<p>(Not actively in use)</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
 	<script>
 		const random = (Math.random() + 1).toString(36).substring(7);
-		const anchor = document.getElementById("email");
-		email.innerText = `${random}@robinsch.net`;
-		email.href = `mailto:${random}@robinsch.net`;
+		const email = document.getElementById("email");
+		email.innerText = `${random} [at] robinsch.net`;
 	</script>
 </body>
 

@@ -7,6 +7,7 @@
 	<title>Robin's site</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -48,76 +49,134 @@
 		</div>
 		<div class="row justify-content-center align-items-center my-5">
 			<div class="col-md-4 col-lg-2">
-				<img src="img/badges/javascript.webp" class="card-img">
+				<div id="carouselJs" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/badges/javascript.svg" class="card-img">
+						</div>
+						<div class="carousel-item">
+							<img src="img/badges/typescript.svg" class="card-img">
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-1"></div>
 			<div class="col-md-7 col-lg-9 bg-dark p-4">
-				<h3>JavaScript</h3>
-				<p>I've been using JavaScript (with Node.js) since 2018. I've done many projects using JavaScript (both front and back-end), from simple websites to advanced Discord apps. I switched in 2023 from js to TypeScript and it's the language I use now for most projects. You can find some example projects below.</p>
-				<a class="btn btn-primary" href="https://www.pokehunt.xyz/" target="_blank">PokéHunt</a>
-				<a class="btn btn-primary" href="https://github.com/Robin-Sch/rstorage-panel/" target="_blank">RStorage</a>
-				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin/" target="_blank">Chattin</a>
+				<h3>Backend</h3>
+				<p>I started creating backend projects using JavaScript (with Node.js) since 2018. Many backends projects have been created, mainly being Discord apps. Starting from 2023, I switched from JavaScript to TypeScript as it allows for type checking which results in code with less bugs. Starting from 2024 I decided to expirement with go, however, I still mainly use TypeScript. You can find some example projects below.</p>
+				<a class="btn btn-primary" href="projects#pokehunt">PokéHunt</a>
+				<a class="btn btn-primary" href="projects#rstorage">RStorage</a>
+				<a class="btn btn-primary" href="projects#chattin">Chattin</a>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/discord-template" target="_blank">Discord Bot Template</a>
+			</div>
+		</div>
+		
+		<div class="row justify-content-center align-items-center my-5">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<div id="carouselHtml" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/badges/arduino.svg" class="card-img">
+						</div>
+						<div class="carousel-item">
+							<img src="img/badges/raspberry.svg" class="card-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
+				<h3>Embedded Systems</h3>
+				<p>My first embedded system project was created in 2022, which used an Arduino UNO to control a pair of 3d printed eyes which would follow you through the room. Additionally, besides some small projects for in my house (e.g. soldering/controlling a RGB strip) I also created a luggage sorting robot. You can find the info below:</p>
+				<a class="btn btn-primary" href="projects#animatronic-eyes">Animatronic eyes</a>
+				<a class="btn btn-primary" href="projects#airport-checkin-robot">Sorting robot</a>
 			</div>
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5">
-			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/badges/html.webp" class="card-img">
+			<div class="col-md-4 col-lg-2">
+				<div id="carouselHtml" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/badges/html.webp" class="card-img">
+						</div>
+						<div class="carousel-item">
+							<img src="img/badges/css.webp" class="card-img">
+						</div>
+						<div class="carousel-item">
+							<img src="img/badges/svelte.svg" class="card-img">
+						</div>
+						<div class="carousel-item">
+							<img src="img/badges/react.svg" class="card-img">
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-4">
-				<h3>HTML</h3>
-				<p>In 2019 I learned how to use HTML and basic CSS. Since then I've created a few sites using HTML. In 2023 I started using SvelteKit for websites, instead of "plain" HTML.</p>
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
+				<h3>Frontend</h3>
+				<p>In 2019 I learned how to use HTML and basic CSS, and because of my backend experience with JavaScript I also used it here. Since then I've created many sites using HTML (including this one), however, most them are either not online anymore or private. In 2023 I started using SvelteKit and React for websites.</p>
 				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Robin-Sch/" target="_blank">This site</a>
 				<a class="btn btn-primary" href="https://www.pokehunt.xyz/" target="_blank">PokéHunt's website</a>
 			</div>
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5">
-			<div class="col-md-4 col-lg-2">
-				<img src="img/badges/java.webp" class="card-img">
-			</div>
-			<div class="col-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-3">
-				<h3>Java</h3>
-				<p>In 2023 I learned to program with Java and created a game called CloudRush with a friend of mine. I prefer Typescript over Java, as (for me) it's an easier language.</p>
-				<a class="btn btn-primary" href="https://github.com/Robin-Sch/CloudRush/" target="_blank">CloudRush</a>
-			</div>
-		</div>
-
-		<div class="row justify-content-center align-items-center my-5">
 			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/badges/python.webp" class="card-img">
-			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-3">
-				<h3>Python</h3>
-				<p>I started with Python in 2019, and in the years following I've used Python only for a few projects. These days I rarely use Python, only for simple scripts where bash scripts do not suffice.</p>
-			</div>
-		</div>
-
-		<div class="row justify-content-center align-items-center my-5">
-			<div class="col-md-4 col-lg-2">
-				<img src="img/badges/linux.webp" class="card-img">
+				<img src="img/badges/linux.svg" class="card-img">
 			</div>
 			<div class="col-1 order-md-1"></div>
 			<div class="col-md-7 col-lg-9 bg-dark p-4">
-				<h3>Linux</h3>
-				<p>I am mangaging multiple Linux systems, primarely Debian, to host some services. From personal projects to selfhosted services in my homelab.</p>
-				<p>I have my own server which I use to host various things (using docker), like for example <a class="anchor" href="https://nextcloud.com/" target="_blank">nextcloud</a> and home automation things.</p>
+				<h3>System admin</h3>
+				<p>I am mangaging multiple Linux systems, primarely Debian, to host some services and get experience as a system admin. These services include things like projects but also selfhosted services for my homelab.</p>
+				<p>On my server, I am running various things (using docker), like for example <a class="anchor" href="https://www.home-assistant.io/">Home Assistant</a>, <a class="anchor" href="https://www.keycloak.org/">Keycloak</a>, <a class="anchor" href="https://nextcloud.com/" target="_blank">Nextcloud</a> ,<a class="anchor" href="https://pi-hole.net/" target="_blank">Pi-hole</a>.</p>
 			</div>
 		</div>
 
-		<div class="row justify-content-center align-items-center my-5">
-			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/badges/git.webp" class="card-img">
-			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 order-md-0 bg-dark p-3">
-				<h3>Git</h3>
-				<p>For (almost) every project I use git. Git is really easy to use and can help a lot with programming. Made a small mistake/bug in your code? With git you can easily go back in time and see what went wrong. It also allows for easy collaboration with other developers.</p>
-				<p>You can find many examples on my Github profile!</p>
+
+		<div class="container text-center">
+			<div class="row">
+				<!-- Programming languages (related) -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/javascript.svg" class="card-img" title="JavaScript"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/typescript.svg" class="card-img" title="TypeScript"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/python.svg" class="card-img" title="Python"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/java.webp" class="card-img" title="Java"></div>
+				<!-- <div class="col-lg-1 col-md-2"><img src="img/badges/go.webp" class="card-img" title="Go"></div>
+				<div class="col-lg-1 col-md-2"><img src="img/badges/lua.webp" class="card-img" title="Lua"></div> -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/html.webp" class="card-img" title="HTML"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/css.webp" class="card-img" title="CSS"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/bash.svg" class="card-img" title="Bash"></div>
+				<!-- Frameworks -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/discordjs.webp" class="card-img" title="Discord.js"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/svelte.svg" class="card-img" title="Svelte"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/react.svg" class="card-img" title="React"></div>
+				<!-- Databases -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/postgresql.svg" class="card-img" title="PostgreSQL"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/mongodb.svg" class="card-img" title="MongoDB"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/sqlite.webp" class="card-img" title="Sqlite"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/redis.svg" class="card-img" title="Redis"></div>
+				<!-- Cloud providers -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/azure.svg" class="card-img" title="Azure"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/cloudflare.svg" class="card-img" title="Cloudflare"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/digitalocean.svg" class="card-img" title="Digital Ocean"></div>
+				<!-- Operating systems -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/linux.svg" class="card-img" title="Linux"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/debian.svg" class="card-img" title="Debian"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/arch.svg" class="card-img" title="Arch"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/proxmox.svg" class="card-img" title="Proxmox"></div>
+				<!-- Hardware -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/arduino.svg" class="card-img" title="Arduino"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/raspberry.svg" class="card-img" title="Raspberry pi"></div>
+				<!-- Services -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/docker.svg" class="card-img" title="Docker"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/grafana.svg" class="card-img" title="Grafana"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/home-assistant.svg" class="card-img" title="Home Assistant"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/keycloak.svg" class="card-img" title="Keycloak"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/nginx.svg" class="card-img" title="Nginx"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/prometheus.svg" class="card-img" title="Prometheus"></div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/traefik.svg" class="card-img" title="Traefik"></div>
+				<!-- Misc -->
+				<div class="col-lg-1 col-md-2 col-sm-3 col-6"><img src="img/badges/git.webp" class="card-img" title="Git"></div>
 			</div>
 		</div>
 	</div>
