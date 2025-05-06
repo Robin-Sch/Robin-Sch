@@ -61,7 +61,7 @@
 					<img src="img/badges/redis.svg" width="30" style="border-radius:0.375rem" title="Redis">
 				</h3>
 				<p class="float-end">
-					<span class="badge text-bg-primary p-2 m-1">2020-24</span>
+					<span class="badge text-bg-primary p-2 m-1">2020-now</span>
 					<span class="badge text-bg-success p-2 m-1">active</span>
 				</p>
 				<p><small>A Pokémon bot in Discord and Telegram</small></p>
@@ -95,8 +95,62 @@
 			</div>
 		</div>
 
+		<div class="row justify-content-center align-items-center my-5" id="autodog">
+			<div class="col-md-4 col-lg-2 order-md-2">
+				<div id="autodog-carousel" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#autodog-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#autodog-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#autodog-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/projects/autodog-connection.webp" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/projects/autodog-library.webp" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/projects/autodog-admin.webp" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#autodog-carousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#autodog-carousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
+				<h3 style="display:inline-block;">
+					AutoDog
+					<img src="img/badges/kotlin.svg" width="30" style="border-radius:0.375rem" title="Kotlin">
+					<img src="img/badges/android.svg" width="30" style="border-radius:0.375rem" title="Android">
+				</h3>
+				<p class="float-end align-self-center">
+					<span class="badge text-bg-primary p-2 m-1">2025</span>
+					<span class="badge text-bg-success p-2 m-1">finished</span>
+				</p>
+				<p><small>A car diagnostics app</small></p>
+				<p>This app allows car owner and manufacturers to view the status and diagnostics of their cars. It is made by 6 CS students (including me), and we received full marks for it.</p>
+				<p>During this project I learned various components about developing an Android app. Besides getting the serial connection with the car to work, I also was responsible for the overal UI design and glueing everything together. Sadly, the source code is not allowed to be public due to school policy.</p>
+				<a class="btn btn-info" data-bs-toggle="collapse" href="#autodog-more" role="button" aria-expanded="false" aria-controls="autodog-more">More info</a>
+				<div class="collapse" id="autodog-more">
+					<div class="card card-body bg-dark">
+						<p>One of my group members was part of a student team that wanted an app for the car they were making. Together with that student team we developed this app, which allows car owners (the users) and manufacturers (the student team) to connect their phone to the car, and then see various details about their car.</p>
+						<p>For instance, the app is able to determine if there is a component that is broken/failing. It can also detect logs (such as lights turned on/off) and view live data such as battery level, temperature and more. There is also a library where you can see all details about your car (and all cars supported by the app), including the specific components and details about those.</p>
+						<p>The app also includes an admin panel, on which car manufacturers can login and view the failures that happened in their fleet of cars (of the same model). Therefore, if there is a failure of the same component across many cars, they can investigate the failure and improve on future iterations of the car. In addition, car owners can submit feedback about the car which the manufacturer can also read.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="row justify-content-center align-items-center my-5" id="airport-checkin-robot">
-			<div class="col-md-5 col-lg-3 order-md-2">
+			<div class="col-md-4 col-lg-2">
 				<div id="airport-checkin-carousel" class="carousel slide" data-bs-ride="true">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#airport-checkin-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -128,8 +182,8 @@
 					</button>
 				</div>
 			</div>
-			<!-- <div class="col-1 order-md-1"></div> -->
-			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
 				<h3 style="display:inline-block;">
 					Airport check-in robot
 					<img src="img/badges/typescript.svg" width="30" style="border-radius:0.375rem" title="TypeScript">
@@ -157,11 +211,11 @@
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5" id="cloudrush">
-			<div class="col-md-5 col-lg-3">
+			<div class="col-md-4 col-lg-2 order-md-2">
 				<img src="img/projects/cloudrush.webp" class="img-fluid">
 			</div>
-			<!-- <div class="col-1"></div> -->
-			<div class="col-md-7 col-lg-9 bg-dark p-4">
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
 				<h3 style="display:inline-block;">
 					CloudRush
 					<img src="img/badges/java.webp" width="30" style="border-radius:0.375rem" title="Java">
@@ -185,11 +239,11 @@
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5" id="animatronic-eyes">
-			<div class="col-md-4 col-lg-2 order-md-2">
+			<div class="col-md-4 col-lg-2">
 				<img src="img/projects/animatronic-eyes.webp" class="img-fluid">
 			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
+			<div class="col-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4">
 				<h3 style="display:inline-block;">
 					Animatronic eyes
 					<img src="img/badges/arduino.svg" width="30" style="border-radius:0.375rem" title="Arduino">
@@ -215,11 +269,11 @@
 		</div>
 
 		<div class="row justify-content-center align-items-center my-5" id="rstorage">
-			<div class="col-md-4 col-lg-2">
+			<div class="col-md-4 col-lg-2 order-md-2">
 				<img src="img/projects/rstorage.webp" class="img-fluid">
 			</div>
-			<div class="col-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-4">
+			<div class="col-1 order-md-1"></div>
+			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
 				<h3 style="display:inline-block;">
 					RStorage
 					<img src="img/badges/javascript.svg" width="30" style="border-radius:0.375rem" title="JavaScript">
@@ -241,36 +295,6 @@
 						<br>For downloading it's the same process, but then reversed.
 						<br>Everything is done using streams, because else you need A LOT of memory to store each file in plaintext and encrypted (or add unnecesary disk read/writes).</p>
 						<p>This project is more meant for myself and to learn from rather than to be actually used. There are many better alternatives like for example cryptomator and rclone to use encryption with cloud storage.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row justify-content-center align-items-center my-5" id="chattin">
-			<div class="col-md-4 col-lg-2 order-md-2">
-				<img src="img/projects/chattin.webp" class="img-fluid">
-			</div>
-			<div class="col-1 order-md-1"></div>
-			<div class="col-md-7 col-lg-9 bg-dark p-4 order-md-0">
-				<h3 style="display:inline-block;">
-					Chattin
-					<img src="img/badges/javascript.svg" width="30" style="border-radius:0.375rem" title="JavaScript">
-					<img src="img/badges/html.webp" width="30" style="border-radius:0.375rem" title="HTML">
-				</h3>
-				<p class="float-end">
-					<span class="badge text-bg-primary p-2 m-1">2020</span>
-					<span class="badge text-bg-danger p-2 m-1">discontinued</span>
-				</p>
-				<p><small>A simple chat app</small></p>
-				<p>Chattin is a simple chat app to securely talk with others. This project is meant as a learning project for myself, and shouldn't be used.</p>
-				<p>I learned a lot about Electron (to make desktop apps) and websockets while making this project.</p>
-				<a class="btn btn-info" data-bs-toggle="collapse" href="#chattin-more" role="button" aria-expanded="false" aria-controls="chattin-more">More info</a>
-				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin" target="_blank">Github</a>
-				<a class="btn btn-primary" href="https://github.com/Robin-Sch/Chattin/releases" target="_blank">Download</a>
-				<div class="collapse" id="chattin-more">
-					<div class="card card-body bg-dark">
-						<p>Chattin is an app where you can talk to others with "military grade" encryption. In order to talk with someone (or multiple people), you both need to join the same group. Messages aren't stored anywhere so if you close the app all messages will be lost!</p>
-						<p>This project is more meant for myself and to learn from rather than to be actually used. There are many (better) chat apps, like for example matrix.org. Chattin requires a central server to be running, which I shut down, so you can't use it (anymore)</p>
 					</div>
 				</div>
 			</div>
