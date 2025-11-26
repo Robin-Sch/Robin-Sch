@@ -5,10 +5,10 @@ import Button from '../components/Links/Button';
 
 const positions = [
 	{ text: 'a Cybersecurity Enthusiast', class: 'text-red-500' },
-	{ text: 'a Command-Line Ninja', class: 'text-red-500' },
 	{ text: 'a Homelab Tinkerer', class: 'text-red-500' },
-	{ text: 'a Software Developer', class: 'text-red-500' },
+	{ text: 'a Software Engineer', class: 'text-red-500' },
 	{ text: 'an Open Source Lover', class: 'text-red-500' },
+	{ text: 'a Command-Line Specialist', class: 'text-red-500' },
 ];
 
 export default function Index(): JSX.Element {
@@ -54,8 +54,7 @@ export default function Index(): JSX.Element {
 		const wait = (ms: number): Promise<unknown> => new Promise((resolve) => setTimeout(resolve, ms));
 
 		// Initialize typing effect and carousel after page load
-		typeSentence("I'm Robin, ", setTextWhite);
-		carouse();
+		typeSentence("I'm Robin, ", setTextWhite).then(() => carouse());
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 

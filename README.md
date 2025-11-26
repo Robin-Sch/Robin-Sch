@@ -1,9 +1,9 @@
 Hello I'm Robin!
-- a (Cyber)security Enthusiast
-- a Command-Line Ninja
+- a Cybersecurity Enthusiast
 - a Homelab Tinkerer
-- a Software Developer
+- a Software Engineer
 - an Open Source Lover
+- a Command-Line Specialist
 
 For my profile, please take a look at my website, [www.robinsch.net](https://www.robinsch.net/). All the information is on there!
 
