@@ -21,7 +21,6 @@ export default function W2quote(): JSX.Element {
 						min-height: 95%;
 						width: auto;
 						height: auto;
-						z-index: -100;
 					}
 					button {
 						border: none;

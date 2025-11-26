@@ -1,7 +1,6 @@
 import { JSX, useEffect, useState } from 'react';
 
 import avatar from '../assets/avatar.webp';
-import '../assets/globals.css'; // We don't show Navbar here, so need to import css manually
 import Button from '../components/Links/Button';
 
 const positions = [

@@ -6,7 +6,8 @@
     "dev": "NEXT_TELEMETRY_DISABLED=1 next dev",
     "build": "NEXT_TELEMETRY_DISABLED=1 next build",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "update-deps": "npx npm-check-updates -u && npm install && npm audit fix"
   },
   "dependencies": {
     "clsx": "^2.1.1",
