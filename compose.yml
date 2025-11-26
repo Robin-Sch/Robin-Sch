@@ -1,0 +1,7 @@
+services:
+  robin-sch:
+    container_name: robin-sch
+    image: ghcr.io/robin-sch/robin-sch:latest
+    restart: unless-stopped
+    ports:
+      - 3000:3000
