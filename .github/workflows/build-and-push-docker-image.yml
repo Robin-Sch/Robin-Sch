@@ -1,8 +1,9 @@
 name: Build and push the Docker image
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-push-docker-image:
@@ -31,6 +32,11 @@ jobs:
       - name: Make github.repository lowercase
         run: echo "IMAGE_NAME=`echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]'`" >> ${GITHUB_ENV}
 
+      - name: Read version from package.json
+        id: package_version
+        run: echo "VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
+
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
@@ -38,6 +44,6 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ env.IMAGE_NAME }}:latest
-            ghcr.io/${{ env.IMAGE_NAME }}:${{ github.event.release.tag_name }}
+            ghcr.io/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
