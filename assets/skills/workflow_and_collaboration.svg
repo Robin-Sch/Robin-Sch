@@ -8,7 +8,7 @@
   <line x1="14.5" y1="3" x2="14.5" y2="21" stroke-width="0.5"/>
   <line x1="18.5" y1="3" x2="18.5" y2="21" stroke-width="0.5"/>
   <rect x="12" y="9" width="1.5" height="2" rx="0.5" fill="#c10007" opacity="0.5"/>
-  <rect x="15.5" y="9" width="1.5" height="2" rx="0.5" fill="currentColor" opacity="0.5"/>
-  <rect x="15.5" y="13" width="1.5" height="2" rx="0.5" fill="currentColor" opacity="0.5"/>
-  <rect x="19.5" y="9" width="1.5" height="2" rx="0.5" fill="currentColor" opacity="0.8"/>
+  <rect x="15.5" y="9" width="1.5" height="2" rx="0.5" fill="#c10007" opacity="0.5"/>
+  <rect x="15.5" y="13" width="1.5" height="2" rx="0.5" fill="#c10007" opacity="0.5"/>
+  <rect x="19.5" y="9" width="1.5" height="2" rx="0.5" fill="#c10007" opacity="0.8"/>
 </svg>

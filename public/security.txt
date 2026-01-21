@@ -1,0 +1,17 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: https://robinsch.net/contact
+Expires: 2026-12-31T22:59:00.000Z
+Encryption: https://robinsch.net/gpg.txt
+Preferred-Languages: en
+Canonical: https://robinsch.net/security.txt
+
+
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQvcZF3GFY9oxtDkzFXGfUNqyCUwQUCaXC+OQAKCRBXGfUNqyCU
+wak4AP4n8VdMP0+Q31hQ9BX81baYvtbvDADcPKRdnUq5mZKW4gD9GbVaUCjZxKuX
+5DIVWioyJ7+bDELjuYqCsGQlyi8LLw0=
+=zLbU
+-----END PGP SIGNATURE-----
