@@ -7,6 +7,7 @@ import html from '../assets/badges/html.webp';
 import java from '../assets/badges/java.webp';
 import kotlin from '../assets/badges/kotlin.svg';
 import postgresql from '../assets/badges/postgresql.svg';
+import python from '../assets/badges/python.svg';
 import raspberry from '../assets/badges/raspberry.svg';
 // import react from '../assets/badges/react.svg';
 import redis from '../assets/badges/redis.svg';
@@ -56,8 +57,8 @@ const projects: CardProps[] = [
 		description: (
 			<>
 				<p>
-					An bot (app) to play Pokémon inside both Discord and Telegram. As of start of 2025, the bot has 85k users and 5.5 million Pokémon whilst being used in
-					9.5k discord groups.
+					An bot (app) to play Pokémon inside both Discord and Telegram. As of mid 2026, the bot has 90k users and 6 million Pokémon whilst being used in almost
+					10k discord and telegram groups.
 				</p>
 				<p>
 					I learned coding in a team and working with a big project. Since this was one of my first projects, it also gave me experience with coding in general.
@@ -93,10 +94,60 @@ const projects: CardProps[] = [
 		links: [{ label: 'Website', url: 'https://l.robinsch.net/3OcPNI', target: '_blank' }],
 		images: [pokeBot],
 	},
+
+	{
+		id: 'descending-heaven',
+		name: 'Descending Heaven',
+		badges: [
+			{ img: typescript, label: 'TypeScript' },
+			{ img: python, label: 'Python' },
+			// { img: redis, label: 'Redis' },
+		],
+		shortDesc: <p>An interactive light installation</p>,
+		tags: [
+			{ label: '2025-now', type: 'primary' },
+			{ label: 'active', type: 'success' },
+		],
+		description: (
+			<>
+				<p>I am leading the project of 8 members in my student team, where we are working on an interactive light installation in a local music venue.</p>
+				<p>
+					The installation consists of 28 triangles with sides of 2 meter that contain individually controllable RGB pixels. The corners of each triangle is
+					connected to a winch that can move 7 meters up and down, creating an immersive lighting experience inside the music venue. In total, there are over
+					3000 pixels and the installation takes 10 by 8.5 meters inside the main hall of the venue.
+				</p>
+			</>
+		),
+		moreDescription: (
+			<>
+				<p>
+					All the triangles are connected through a wired DMX network that is controllable by both our software and a DMX lighting console. Our software
+					includes a real-time visualisation of the installation in your browser and allows for specific per-triangle controls, as well as pre-defined movement
+					patterns and color effects to create a custom and dynamic lighting experience for every event.
+				</p>
+				<p>
+					As of right now, the installation is fully functional and can be controlled through our software. We are actively expanding the amount of pre-defined
+					patterns and effects, as well as working on a way for a light technician to easily create their own. In the future, we plan to make the installation
+					react to the music for a fully immersive experience.
+				</p>
+			</>
+		),
+		links: [],
+		images: [
+			{ src: 'https://l.robinsch.net/0oQPDW.webp', height: 4284, width: 5712 },
+			{ src: 'https://l.robinsch.net/eOmMJ3.webp', height: 1066, width: 1600 },
+			{ src: 'https://l.robinsch.net/VtDSMr.webp', height: 5712, width: 4284 },
+			{ src: 'https://l.robinsch.net/J6Sih7.webp', height: 912, width: 1901 },
+			{ src: 'https://l.robinsch.net/gpcCND.webp', height: 912, width: 1901 },
+		],
+	},
 	{
 		id: 'perception',
 		name: 'Perception',
-		badges: [{ img: esp, label: 'ESP32' }],
+		badges: [
+			{ img: esp, label: 'ESP32' },
+			{ img: arduino, label: 'Arduino' },
+		],
 		shortDesc: <p>A multi-sensory interactive structure</p>,
 		tags: [
 			{ label: '2025', type: 'primary' },
